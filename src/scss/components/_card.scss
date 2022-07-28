@@ -1,0 +1,39 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.card__container{
+    max-width: v.$mobil;
+    width: 95%;
+    margin: 0 auto;
+    min-height: 100vh;
+    @include m.desktop {
+        width: 100%;
+        max-width: v.$desktop;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    max-width: 32rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: v.$white;
+}
+.card__images{
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.card__body{
+    text-align: center;
+    font-size: v.$size;
+    padding: 2.5rem;
+}
+
+.card__heading{
+    color: v.$dark-blue;
+    margin: 0;
+}
+.card__text{
+    color: v.$grayish-blue;
+}

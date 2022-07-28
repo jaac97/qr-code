@@ -1,0 +1,20 @@
+@use '../base/variables' as v;
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    min-height: 100vh;
+    background-color: v.$light-gray;
+    font-family: v.$font;
+}
+p{
+    font-size: v.$size;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
