@@ -27,7 +27,7 @@
 .card__body{
     text-align: center;
     font-size: v.$size;
-    padding: 2.5rem;
+    padding: 2rem 0;
 }
 
 .card__heading{
@@ -36,4 +36,5 @@
 }
 .card__text{
     color: v.$grayish-blue;
+    padding: 0 1.6rem;
 }
