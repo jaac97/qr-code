@@ -1,4 +1,6 @@
 const gulp= require('gulp');
+const {parallel}  = require('gulp')
+
 const sass = require('gulp-sass')(require('sass'));
 const sourcemaps = require('gulp-sourcemaps');
 function buildStyles() {
@@ -12,4 +14,4 @@ function watchers () {
     gulp.watch('./src/sass/**/*.scss', buildStyles);
     // gulp.watch('./src/images/**/*', convertWebp)
 }
-exports.default = gulp.parallel(buildStyles,watchers);
+exports.default = parallel(buildStyles,watchers);
